@@ -43,7 +43,7 @@ const ConnectButton = () => {
 
   const handleDisconnect = async () => {
     await disconnectAsync();
-    signOut({ callbackUrl: '/' });
+    signOut({ redirect: false });
   };
 
   if (data?.user) {
